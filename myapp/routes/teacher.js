@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   // res.render('index', { title: 'Express' });
   console.log(req)
-  res.json({name: "aniket anand"});
+  res.json({name: "teachers are good"});
 });
 
 module.exports = router;
