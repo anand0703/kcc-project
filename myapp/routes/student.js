@@ -8,4 +8,20 @@ router.get('/data', function(req, res, next) {
   res.json({name: "KCC Tier-1 college"});
 });
 
+router.get('/:da-:ta', function(req, res, next) {
+    // res.render('index', { title: 'Express' });
+    console.log(req.params.da)
+    res.json({name: req.params.da + " and " + req.params.ta + " are good student"});
+  });
+
+router.get('/:da', function(req, res, next) {
+    // res.render('index', { title: 'Express' });
+    console.log(req.params.da)
+    res.json({name: req.params.da});
+  });
+
+  
+
+
+
 module.exports = router;
